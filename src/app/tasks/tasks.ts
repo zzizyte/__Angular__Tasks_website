@@ -8,5 +8,5 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './tasks.scss',
 })
 export class TasksComponent {
-  @Input({required:true})name!: string;
+  @Input({required:true}) name!: string;
 }
