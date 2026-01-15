@@ -10,22 +10,22 @@ import { TasksComponent } from './tasks/tasks';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
+
 export class App {
   users = DUMMY_USERS;
-  selectedUserID = 'someID'
-
-  onSelectUser(id:string){
-    this.selectedUserID = id;
-  }
+  selectedUserId?: string;
 
   get selectedUser() {
-    return this.users.find((user)=>user.id === this.selectedUserID)!;
+    return this.users.find((user)=>user.id === this.selectedUserId);
 
   }
 
+  onSelectUser(id: string){
+    this.selectedUserId = id;
+  }
   
   // // onSelectUser(user:{id:string, name: string}) {
-  // //   this.selectedUserID = user.id;
+  // //   this.selectedUserId = user.id;
   // //   this.selectedUserName = user.name;
   // // }
 }

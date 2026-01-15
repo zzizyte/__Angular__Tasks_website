@@ -1,4 +1,4 @@
-#tasks {
+#task {
   padding: 1rem;
   border-radius: 8px;
   max-height: 60vh;
@@ -26,7 +26,7 @@ menu {
   padding: 0;
 }
 
-menu button {
+button {
   font: inherit;
   cursor: pointer;
   background-color: #9965dd;
@@ -36,8 +36,8 @@ menu button {
   font-size: 0.9rem;
 }
 
-menu button:hover,
-menu button:active {
+button:hover,
+button:active {
   background-color: #a565dd
 }
 
